@@ -1,0 +1,312 @@
+/*esto es un comentario en css*/
+
+/* el * (asterisco) es un selector universal, se va a aplicar a todo nuestro codigo html, y
+es buena práctica que esas características las coloquemos al inicio del codigo css*/
+/* Selector universal (*). Nos va a servir para resetear o pisar algunos estilos (propiedades) que
+aplican los navegadores por defecto*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#contenido { width: 800px; margin: 0 auto; } /*esto es para darle un centro a mi página
+porque quería darle un cierto formato, busqué en google como hacerlo*/
+
+body {
+    background-color: black; /* background-color aplica color solido de fondo */
+    color: white /* color aplica color solido al texto*/; font-size: large /* tamaño de letra */; 
+} /*se aplican estas caracteristicas a todo el cuerpo */
+
+/*para darle ciertas caracteristicas a lo que está en el header que son los enlaces para navegar por el sitio*/
+/*este tipo de selector, punto y un nombre, es el que mas se usa*/
+.header_propiedades {
+    display: flex; /*flex box, para que darle ciertas caracteristicas que le quiero dar a
+    una cajita o parte del codigo*/
+    justify-content: center; /*justificado y centrado*/
+    margin: 2rem; /*margen*/
+    align-items: center; /*centrado*/
+}
+
+/*hover es para que cuando pasamos el cursor sobre los enlaces (locales en este caso) el texto cambie de color*/
+.seleccion_link_local:hover {
+    color: rgb(221, 85, 27);
+}
+
+a {color: inherit; /*para que el color de los enlaces se vean del color que yo quiero y no violetas*/
+    /*text-decoration: none; si quisiera sacarle el subrayado a los enlaces, pero no lo uso
+    porque quiero dejarlo para que se distinga bien que son enlaces*/
+}
+
+/*margenes y espacios en esa parte*/
+.nav_propiedades {
+    margin-left: 1rem;
+    line-height: 2rem;
+}
+
+.training_propiedades {
+    display: flex;
+    /*flex-direction: row, es para poner los enlaces horizontales,
+    columnas, ahora no lo uso porque quiero que sean verticales*/
+    justify-content: center;
+    margin: 2rem;
+    align-items: center;
+}
+
+.text_training_propiedades {
+    margin-left: 2rem;
+    line-height: 2.3rem;
+    list-style: none;
+}
+
+/*para darle color violeta a ciertos parrafos*/
+.parrafo_violeta {
+    text-align: center;
+    color: rgb(183, 111, 251); /* color picker es una pag, herramienta,
+    donde da los colores en diferentes codigos en los diferentes formatos */
+} /*se aplica esta caracteristica solo a los parrafos que tengan este nombre en mi codigo html,
+es decir a esta clase dentro de este tipo de elemento*/
+
+/*para darle color verde a ciertas partes del texto*/
+.parrafo_verde {
+    color: rgb(55, 241, 55);
+    text-decoration: none /*para sacarle el subrayado al texto de whatsapp que es enlace y lleva al whatsapp, quiero que sea diferente a
+    los demas enlaces que van a facebook o instagram y también a los que son para navegar por el sitio web de forma local*/
+} /*se aplican estas caracteristicas solo a los parrafos que tengan este nombre en mi codigo html*/
+
+
+.parrafo_verdoso {
+    color: rgb(141, 249, 218); /*para darle color verdoso a ciertas partes del texto*/
+    text-align: center; /*centrado*/
+    margin-left: 3rem; /*margen izquierdo*/
+    margin-right: 3rem; /*margen derecho*/
+}
+
+/*para darle color amarillo a ciertas partes del texto*/
+.texto_amarillo {
+    color: rgb(230, 214, 35);
+    list-style: none; /*para que desaparezcan las viñetas de los textos donde haya listas*/
+} /*se aplican estas caracteristicas solo al texto que tenga este nombre en mi codigo html*/
+
+/*para darle otro color de amarillo a las letras*/
+.texto_amarillo2 {
+    color: rgb(230, 214, 35);
+    text-align: center; /*centrado*/
+}
+
+/*para darle color rojo a las letras*/
+.texto_rojo {
+    color: rgb(225, 83, 83);
+    text-align: justify;
+    margin-left: 7rem;
+    margin-right: 7rem;
+} /*se aplican estas caracteristicas solo al texto que tenga este nombre en mi codigo html*/
+
+/*para hacer lila las letras*/
+.texto_lila {
+    color: rgb(210, 128, 251);
+}
+
+/*para hacer celeste las letras*/
+.texto_celeste {
+    color: rgb(104, 147, 199);
+}
+
+/*para darle otro color celeste a este texto*/
+.texto_consulta {
+    color: rgb(107, 214, 250);
+}
+
+/*para ahcer las letras naranjas*/
+.texto_naranja {
+    color:rgb(209, 143, 76)
+}
+
+/*para hacer el texto blanco y darle ciertos márgenes y espacios al texto*/
+.texto_blanco {
+    text-align: justify;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+/*para hacer el texto blanco y darle otros márgenes y espacios al texto*/
+.texto_blanco_centrado {
+    text-align: center;
+    color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/*para hacer el texto blanco y alinearlo a la izquierda*/
+.texto_blanco_izq {
+    text-align: left;
+    color: white;
+}
+
+/* # es un id, es un selector unico, las caracteristicas que se elijan se aplicaránsolo a este elemento*/
+#titulo_inicial {
+    text-align: center;
+    font-size: 100px;
+    font-style: normal ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} /*las caractiristicas elegidas se aplican solo a este elemento, titulo en este caso,
+al que le pongo este id y este nombre en mi cod html*/
+
+#titulo_secundario {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(218, 45, 45);
+}
+
+#titulo_tercera_pag {
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#titulo_terciario {
+    font-size: 20px;
+    text-align: center;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#titulo_segunda_pag {
+    font-size: 60px;
+    text-align: center;
+    font-style:normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(7, 233, 192);
+}
+
+/* Esto es para hacer colores degradados */
+.gradiente {
+    background-image: linear-gradient(180deg, rgba(1,1,1,1) 31%, rgba(31,58,58,1) 46%, rgba(43,108,67,1) 53%, rgba(34,48,39,1) 59%, rgba(1,1,1,1) 72%);
+} /* Se usa background-image y se utilizan las herramientas de la página cssgradient.io y
+armé el degradado con los colores y de la forma que me gustó y luego copié el código
+que da como resultado y lo pegué acá */
+
+/*para darle al video la configuracion que quiero, por ejemplo un borde blanco alrededor*/
+video {
+    display: block;
+    margin:auto;
+    border: 3px solid white;
+}
+
+.escuelas_propiedades {
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.parrafo_escuelas{
+    margin-left: 1rem;
+    line-height: 1.5rem;
+}
+
+.lista_escuelas {
+    margin-left: 2rem;
+    line-height: 1.5rem;
+    list-style: decimal;   
+}
+
+.lista_desordenada {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    line-height: 2rem;
+}
+
+/*estilo de borde de imagen*/
+.imag_ninja {
+    border: 2px ridge rgb(180, 171, 46);
+    border-radius: 10px; 
+}
+
+.logo_whatsapp {
+    display: flex;
+    justify-content: center
+}
+
+.texto_whatsapp {
+    display: flex;
+    justify-content: center;
+}
+
+.redes_propiedades {
+    display: flex;
+    justify-content: space-around;
+    margin-inline: 4.3rem;
+    font-size: 20px;
+}
+
+.derechos_propiedades {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    line-height: 2rem;
+    font-size: small; /*tamaño de letra*/
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*fuente de letra*/
+} 
+
+.imag {
+    display: block;
+    margin:auto;
+}
+
+.margen_formulario {
+    margin: 5rem;
+}
+
+.imag_contenedor {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.imag_div {
+    width: 50%;    
+}
+
+/*para que mi sitio web sea responsive, se adapte a cualquier tamaño de dispositivo y se vea bien*/
+@media (max-width:600px) {
+    body {
+        font-size: xx-large;
+    }
+    .parrafo_verde {
+        font-size: xx-large
+    }
+    .texto_celeste {
+        font-size: xx-large
+    }
+    .texto_lila {
+        font-size: xx-large
+    }
+    .texto_naranja {
+        font-size: xx-large
+    }
+    .derechos_propiedades {
+        font-size: x-large
+    }
+    .escuelas_propiedades {
+        flex-direction: column;
+    }
+    .parrafo_escuelas {
+        margin-top: 2rem;
+        line-height: 2rem;
+    }
+    .lista_escuelas { 
+        line-height: 2rem;
+    }
+}
+    
