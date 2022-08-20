@@ -10,7 +10,7 @@ aplican los navegadores por defecto*/
     box-sizing: border-box;
 }
 
-#contenido { width: 800px; margin: 0 auto; } /*esto es para darle un centro a mi página
+#contenido { width: 800px; margin: 0 auto; } /* esto es para darle un centro a mi página
 porque quería darle un cierto formato, busqué en google como hacerlo*/
 
 body {
@@ -21,7 +21,7 @@ body {
 /*para darle ciertas caracteristicas a lo que está en el header que son los enlaces para navegar por el sitio*/
 /*este tipo de selector, punto y un nombre, es el que mas se usa*/
 .header_propiedades {
-    display: flex; /*flex box, para que darle ciertas caracteristicas que le quiero dar a
+    display: flex; /*flex box, para darle ciertas caracteristicas que le quiero dar a
     una cajita o parte del codigo*/
     justify-content: center; /*justificado y centrado*/
     margin: 2rem; /*margen*/
